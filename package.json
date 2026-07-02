@@ -12,7 +12,7 @@
         "test:unit": "tsx --test test/unit/**/*.test.ts",
         "test:integration": "tsx --test test/integration/**/*.test.ts",
         "debug": "npx @modelcontextprotocol/inspector npx tsx src/index.ts",
-        "bundle": "bun build ./src/index.ts --compile --outfile mcp-pb",
+        "bundle": "bun build ./src/index.ts --compile --outfile mcp-say",
         "build:bin": "bash bundle.sh",
         "format": "prettier --write .",
         "commit": "cz",

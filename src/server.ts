@@ -1,13 +1,10 @@
-import {createRequire} from 'node:module';
 import {McpServer} from '@modelcontextprotocol/sdk/server/mcp.js';
+import pkg from '../package.json';
 import {registerSayTools} from './tools/index.js';
 
-const require = createRequire(import.meta.url);
-const {name, version} = require('../package.json') as {name: string; version: string};
-
 export const SERVER_INFO = {
-    name,
-    version
+    name: pkg.name,
+    version: pkg.version
 };
 
 export function createMcpServer(): McpServer {
