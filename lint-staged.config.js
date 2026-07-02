@@ -1,4 +1,3 @@
 export default {
-    '*.{js,jsx,ts,tsx,vue}': ['prettier --write'],
-    '*.{json,md,css,scss,html}': ['prettier --write']
+    '*.{js,ts,json,md,yml,yaml}': ['prettier --write']
 };

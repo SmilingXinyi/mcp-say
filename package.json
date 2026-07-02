@@ -1,12 +1,43 @@
 {
     "name": "mcp-say",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Provide professional 'say' command MCP services.",
     "type": "module",
+    "license": "MIT",
+    "author": "Xinyi <smilingxinyi@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SmilingXinyi/mcp-say.git"
+    },
+    "homepage": "https://github.com/SmilingXinyi/mcp-say#readme",
+    "bugs": {
+        "url": "https://github.com/SmilingXinyi/mcp-say/issues"
+    },
+    "keywords": [
+        "mcp",
+        "model-context-protocol",
+        "macos",
+        "tts",
+        "text-to-speech",
+        "say",
+        "speech-synthesis",
+        "cursor",
+        "claude-code"
+    ],
     "bin": {
         "mcp-say": "./build/index.js"
     },
+    "files": [
+        "build",
+        "README.md",
+        "LICENSE"
+    ],
+    "engines": {
+        "node": ">=18"
+    },
+    "packageManager": "pnpm@10.30.1",
     "scripts": {
+        "prepublishOnly": "pnpm build",
         "build": "tsc",
         "test": "tsx --test test/**/*.test.ts",
         "test:unit": "tsx --test test/unit/**/*.test.ts",
